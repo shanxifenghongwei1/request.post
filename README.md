@@ -3,10 +3,7 @@
 
 直接原文贴起~~~~
 
-
-
-
-// let host = {
+let host = {
 
         request: "https://www.nazhua.net/", //请求域名
 	
@@ -39,9 +36,11 @@
     })
 }
 
-    // 请求表达式：1.把上面的放到 app.js 里面；
-    //            2. 在需要请求的页面的js里 page 函数外面申明常量  const app = getApp();
- ``//             3. 那么请求表达式为
+    请求表达式： 1.把上面的放到 app.js 里面；
+                2. 在需要请求的页面的js里 page 函数外面申明常量  const app = getApp();
+                3. 那么请求表达式为
+ 请求下面的-----
+ 
                 app.post({
                     url:'admin/asd', //里面内容是你上面 host 里面网址的后续 。
                     data:{ a: 1},   // 这里的  data是传送数据的  。data可以有，也可以没有。
@@ -50,6 +49,7 @@
                                               //这里的res就可以直接拿到用了
                          }
                     })
+		    
               //  请求方法为post  如果想改就在里面加一个 method：get 之类的。
 	      
 			  
