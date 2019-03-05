@@ -3,17 +3,27 @@
 
 直接原文贴起~~~~
 
-let host = {
-        request: "https://www.nazhua.net/api/", //请求域名
+
+
+
+// let host = {
+
+        request: "https://www.nazhua.net/", //请求域名
+	
     }
 
+
+ 
  if (ajaxJson.isLoading) { //为ture 显示loading
+ 
         wx.showLoading({
+	
             title: '加载中',
         })
     }
 
  post : function (ajaxJson) {
+ 
     wx.request({
         url: host.request + ajaxJson.url,
         data: ajaxJson.data,
@@ -41,4 +51,5 @@ let host = {
                          }
                     })
               //  请求方法为post  如果想改就在里面加一个 method：get 之类的。
+	      
 			  
