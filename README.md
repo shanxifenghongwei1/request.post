@@ -41,3 +41,4 @@ let host = {
                          }
                     })
               //  请求方法为post  如果想改就在里面加一个 method：get 之类的。
+			  
